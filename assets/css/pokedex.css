@@ -146,6 +146,45 @@
     border-radius: 1rem;
 }
 
+.pokemon-modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 50%;
+    overflow: auto; 
+    
+}
+
+.ability {
+    color: #fff;
+    padding: 0 20px;
+}
+
+.modal-content {
+    background-color: #858484;
+    margin: 10% auto; 
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 20%;
+    height: 50%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
@@ -163,3 +202,4 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
